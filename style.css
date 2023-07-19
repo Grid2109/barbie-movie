@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "Absolute Blonde";
+    src: url("./fonts/Absolute\ Blonde.ttf")
+    format("truetype");
+    
+}
+
+@font-face {
+    font-family: "ITC Avant Garde Gothic Std Medium";
+    src: url("./fonts/ITC\ Avant\ Garde\ Gothic\ Std\ Medium.otf")
+    format("truetype");
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: "Absolute Blonde", sans-serif;
+    color: #fff;
+    position: relative; 
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 650px;
+   gap: 70px;
+   margin-left: 125px;                                                                          
+}
+
+header {
+  display: flex;
+  gap: 150px;
+  margin-top: 80px;
+}
+
+header span {
+    font-size: 80px;   
+}
+
+.phrase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    font-family: "ITC Avant Garde Gothic Std Medium", sans-serif;
+}
+
+.phrase h2 {
+    font-size: 40px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cine p {
+    font-size: 45px;
+}
+
+.cine p:last-child {
+    font-size: 30px;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+i {
+    font-size: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 25px;
+}
+
+button a {
+    font-size: 25px;
+    font-family: "Absolute Blonde" sans-serif;
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 50px;
+    display: inline-block;
+}  
+
+button {
+    font-family: "Absolute Blonde" sans-serif;
+    border-radius: 26.933px;
+    border: 1.796px solid #FFF;
+    background: #DE3AA4;
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    
+}
+
+footer i {
+    cursor: pointer;
+}
+
+#scroll {
+  margin-left: 268px;
+}
+
+.ph-speaker-slash {
+    display: none;
+}
+
+#modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background: rgba(0, 0, 0, 0.70);
+    left: 0;
+    top: 0;
+    animation: fadeIn 0.8s;
+}
+
+iframe {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 5px solid #FFF;
+    border-radius: 10px;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

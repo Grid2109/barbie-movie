@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Barbie - Movie</title>
+
+    <script src="main.js" defer></script>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script><!--site phosphoroicons/getstarted/github/ícones de fósforo-->
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-png">
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span>Margot Robbie</span>
+            <span>Ryan Gosling</span>
+        </header>
+
+        <section class="phrase">
+           <h2>Ela é tudo.</h2>
+           <h2>Ele é só o Ken.</h2>
+        </section>
+
+       <section class="info">
+        <div class="cine">
+            <p>20 de Julho</p>
+            <p>Somente nos cinemas</p>
+        </div>
+
+        <div class="social">
+            <i class="ph-duotone ph-facebook-logo"></i> <!--duotone é a configuração que eu aplico no meu ícone antes de baixá-lo-->
+
+            <i class="ph-duotone ph-tiktok-logo"></i>
+
+            <i class="ph-duotone ph-instagram-logo"></i>
+
+            <i class="ph-duotone ph-twitter-logo"></i>
+
+        </div>
+       </section>
+
+       <section class="buttons">
+
+        <button>
+            <a href="https://google.com/search?q=barbie" target="_blank" >Compre seu ingresso</a>
+        </button>
+       
+        <button>
+            <a href="#" id="openModal">Assista ao trailer</a>
+        </button>
+
+       </section>
+
+       <div id="modalContainer">
+    
+        <iframe id="youtubeIframe" width="1280" height="720" src="https://www.youtube.com/embed/CeB-HLnkiKQ?controls=0" frameborder="0" allowfullscreen></iframe>
+       
+       </div>
+
+       <footer>
+        <i class="ph-duotone ph-speaker-high" onclick="playAudio()"></i>
+
+        <i class="ph-duotone ph-speaker-slash" ></i>
+
+        <audio id="music" loop>
+            <source src="./audio/barbie.mp3" type="audio/mpeg">
+        </audio>
+
+        <img src="./assets/Warner Logo.png" alt="warner">
+
+        <img id="scroll" src="./assets/scroll-down.gif" alt="scroll" width="30px" height="30px">
+       </footer>
+    </div>
+</body>
+</html>
