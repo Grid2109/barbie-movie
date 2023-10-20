@@ -20,6 +20,7 @@
 }
 
 body {
+    display: flex;
     width: 100%;
     height: 100vh;
     background-image: url("./assets/background.jpeg");
@@ -36,8 +37,9 @@ body {
    flex-direction: column;
    align-items: center;
    max-width: 650px;
-   gap: 70px;
-   margin-left: 125px;                                                                          
+   width: 100%;
+   gap: 50px;
+   margin-left: 80px;                                                                      
 }
 
 header {
@@ -47,7 +49,7 @@ header {
 }
 
 header span {
-    font-size: 80px;   
+    font-size: 40px;   
 }
 
 .phrase {
@@ -59,7 +61,7 @@ header span {
 }
 
 .phrase h2 {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .info {
@@ -77,11 +79,11 @@ header span {
 }
 
 .cine p {
-    font-size: 45px;
+    font-size: 20px;
 }
 
 .cine p:last-child {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .social {
@@ -90,7 +92,7 @@ header span {
 }
 
 i {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .buttons {
@@ -99,11 +101,11 @@ i {
 }
 
 button a {
-    font-size: 25px;
+    font-size: 16px;
     font-family: "Absolute Blonde" sans-serif;
     color: #FFF;
     text-decoration: none;
-    padding: 20px 50px;
+    padding: 20px 30px;
     display: inline-block;
 }  
 
@@ -120,19 +122,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 25px;
-    position: absolute;
-    bottom: 30px;
-    left: 40px;
-    
 }
 
 footer i {
     cursor: pointer;
 }
 
-#scroll {
-  margin-left: 268px;
-}
 
 .ph-speaker-slash {
     display: none;
@@ -168,5 +163,68 @@ iframe {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media screen  and (max-width: 890px) {
+    body {
+        display: flex;
+        align-items: normal;
+        justify-content: center;
+    }
+    .container {
+        text-align: center;
+        gap: 80px;
+        margin-left: 20px;
+    }
+ 
+    @media screen  and (max-width: 768px){
+    body {
+        display: flex;
+        align-items: normal;
+        justify-content: center;
+    }
+      header {
+       gap: 120px;
+      }
+
+      .container {
+        text-align: center;
+        gap: 80px;
+        margin-left: 20px;
+    }
+
+    @media screen  and (max-width: 430px) {
+        header {
+        text-align: center;
+        gap: 20px;
+        }
+
+        .container {
+            gap: 50px;
+            margin-left: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 18px;
+        }
+
+        button a {
+            font-size: 14px;
+        }  
+    }
+
+    @media screen  and (max-width: 390px){
+        button a {
+            padding: 18px;
+        }  
+    }
+
+    @media screen  and (max-width: 320px) {
+      body {
+        overflow: scroll;
+      }
+    }
     }
 }
