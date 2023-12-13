@@ -212,7 +212,11 @@ iframe {
 
         button a {
             font-size: 14px;
-        }  
+        } 
+
+        #youtubeIframe{
+            width: 90%;
+        }
     }
 
     @media screen  and (max-width: 390px){
@@ -224,6 +228,11 @@ iframe {
     @media screen  and (max-width: 320px) {
       body {
         overflow: scroll;
+      }
+
+      #youtubeIframe{
+        width: 80%;
+        height: 350px;
       }
     }
     }
